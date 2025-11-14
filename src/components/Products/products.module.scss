@@ -1,0 +1,111 @@
+.products {
+    &__filter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        gap: 10px;
+
+        @media (max-width:992px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            h1{
+                grid-column: span 2;
+            }
+        }
+        @media (max-width:768px) {
+            grid-template-columns: 1fr;
+            h1{
+                grid-column: span 1;
+            }
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 45px;
+        
+        @media (max-width:992px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width:768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__item {
+        box-shadow: 18px 18px 36px 0 rgba(211, 209, 216, 0.25);
+        border-radius: 18px;
+        position: relative;
+    }
+
+    &__img {
+        width: 100%;
+        height: 165px;
+        border-radius: 18px;
+        object-fit: cover;
+    }
+
+    &__price {
+        border-radius: 121px;
+        background: #fff;
+        box-shadow: 0 7px 28px 0 rgba(254, 114, 76, 0.2);
+        font-size: 20px;
+        color: #111719;
+        padding: 4px 11px 2px 17px;
+        position: absolute;
+        top: 12px;
+        left: 13px;
+
+        span {
+            color: #fe724c;
+        }
+    }
+
+    &__cart {
+        background: #fe724c;
+        box-shadow: 0 8px 18px 0 rgba(254, 114, 76, 0.4);
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__wrapper {
+        padding: 0 13px 15px 13px;
+    }
+
+    &__rating {
+        box-shadow: 0 6px 24px 0 rgba(254, 114, 76, 0.2);
+        background: #fff;
+        border-radius: 136px;
+        font-weight: 600;
+        font-size: 12px;
+        padding: 6px 9px;
+        width: max-content;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: -15px;
+        position: relative;
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 3px;
+    }
+
+    &__desc {
+        font-size: 14px;
+        color: #5b5b5e;
+    }
+}

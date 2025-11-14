@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'OpenSans';
+}
+
+input,
+textarea,
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    resize: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.user-layout {
+    display: flex;
+    min-height: 100dvh;
+}
+
+.container {
+    flex-grow: 1;
+    padding: 39px 60px 20px 64px;
+}
+
+.btn {
+    box-shadow: 0 10px 30px 0 rgba(254, 114, 76, 0.2);
+    background: #fe724c;
+    border-radius: 28px;
+    padding: 9px;
+    line-height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: clamp(1.5625rem, 1.2351rem + 1.6369vw, 2.25rem);
+}
+
+.text-limit {
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
